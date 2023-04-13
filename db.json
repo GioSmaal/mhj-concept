@@ -1,0 +1,11 @@
+{
+    "islands":
+    [
+    {
+        "id": 1,
+        "name": "Power",
+        "description": "Nice",
+        "powerUpsUnlocked": 0
+    }
+    ]
+}
