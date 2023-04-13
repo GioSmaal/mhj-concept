@@ -6,6 +6,11 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    colors: {
+      'dark-green': '#40665c',
+      'light-green': '#67a897',
+      'orange': '#a69157',
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -14,5 +19,15 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({addUtilities}) {
+      const extendUnderline = {
+          '.underline': {
+              'textDecoration': 'underline',
+              'text-decoration-color': '#a69157',
+          },
+      }
+      addUtilities(extendUnderline)
+  }
+  ],
 }
