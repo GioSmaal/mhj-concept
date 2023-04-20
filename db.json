@@ -3,9 +3,27 @@
     [
     {
         "id": 1,
-        "name": "Power",
-        "description": "Nice",
-        "powerUpsUnlocked": 0
+        "name": "Start",
+        "description": "Start your journey here. The powerups here will help you fill your DELIVER- board",
+        "powerUpsUnlocked": 0,
+        "powerUps":{
+            "powerUpIDS": [1, 2]
+        }
+    }
+    ],
+    "powerUps":[
+    {
+        "id": 1,
+        "name": "My Hero's Journey Explained - Discover and Deliver",
+        "description": "Hello",
+        "LinkedAsset": 5
+    },
+    {
+        "id": 2,
+        "name":"My Hero's Journey Explained - Discover and Deliver",
+        "description":"Hello",
+        "LinkedAsset": 3
     }
     ]
+
 }
