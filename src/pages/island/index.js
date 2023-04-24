@@ -23,8 +23,21 @@ export default function Carousel() {
   return (
     <Fragment>
       <NavBar />
+      {/* title */}
+      <div className="relative h-2/5 w-2/6">
+        <div className="relative top-20 left-14 text-7xl font-poppins font-bold text-dark-green">
+        DRIVE
+        </div>
+        <div className="relative top-20 left-14 font-poppins text-white">
+        Discover your drive. What do you want to get up for in the morning? What is there to do? This is all about you.<br />
+
+        This Island will help you become more open minded. It will explore all the possibilities and make you look for the best of yourself. <br /> <br />
+
+        Read more...
+        </div>
+      </div>
       {/* Carousel */}
-      <div className="fixed top-20 right-20 w-3/5 h-2/5 overflow-hidden flex justify-center"> 
+      <div className="fixed top-20 right-14 w-3/5 h-2/5 overflow-hidden flex justify-center"> 
         <div className="relative w-2/5 h-4/5">
           {images.map((image, index) => (
             <img
