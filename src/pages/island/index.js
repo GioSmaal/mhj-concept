@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const images = [
-  "../public/images/Island1.svg",
+  "./Island1.svg",
   "https://via.placeholder.com/300x300.png?text=Image+2",
   "https://via.placeholder.com/300x300.png?text=Image+3", 
   "https://via.placeholder.com/300x300.png?text=Image+4",
@@ -20,14 +20,14 @@ export default function Carousel() {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex items-center justify-center h-screen overflow-hidden">
       <div className="relative w-2/5 h-4/5">
         {images.map((image, index) => (
           <img
             key={index}
             src={image}
             alt={`Image ${index + 1}`}
-            className={`absolute inset-0 w-full h-full object-cover rounded-lg transition-all duration-500 ${
+            className={`absolute inset-0 w-full h-full object-contain rounded-lg transition-all duration-500 ${
               index === selected
                 ? "scale-100 opacity-100"
                 : index === (selected + 1) % images.length ||
