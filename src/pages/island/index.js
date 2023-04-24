@@ -23,7 +23,8 @@ export default function Carousel() {
   return (
     <Fragment>
       <NavBar />
-      <div className="fixed top-20 right-20 w-3/5 h-2/5 overflow-hidden flex justify-center">
+      {/* Carousel */}
+      <div className="fixed top-20 right-20 w-3/5 h-2/5 overflow-hidden flex justify-center"> 
         <div className="relative w-2/5 h-4/5">
           {images.map((image, index) => (
             <img
@@ -45,18 +46,24 @@ export default function Carousel() {
           ))}
           <button
             onClick={selectPrevious}
-            className="absolute top-1/2 left-0 transform -translate-y-1/2 rounded-full text-white bg-black bg-opacity-50 hover:bg-opacity-75 transition-colors duration-500"
+            className="absolute top-1/2 left-0 transform -translate-y-1/2 rounded-full opacity-50 hover:opacity-100 transition-colors"
             style={{
               left: "-1.5rem",
+              fontSize: "2rem",
+              fontWeight: "900",
+              color: "#40665c"
             }}
           >
             &lt;
           </button>
           <button
             onClick={selectNext}
-            className="absolute top-1/2 right-0 transform -translate-y-1/2 rounded-full text-white bg-black bg-opacity-50 hover:bg-opacity-75 transition-colors duration-500"
+            className="absolute top-1/2 right-0 transform -translate-y-1/2 rounded-full opacity-50 hover:opacity-100 transition-colors"
             style={{
               right: "-1.5rem",
+              fontSize: "2rem",
+              fontWeight: "900",
+              color: "#40665c"
             }}
           >
             &gt;
